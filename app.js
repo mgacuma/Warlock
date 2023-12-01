@@ -9,6 +9,7 @@ class GameServer {
         const __dirname = new URL('.', import.meta.url).pathname;
         this.expressApp = express();
         this.expressApp.use(express.static(__dirname + '/public'));
+        // this.expressApp.use("/public/", express.static(__dirname + '/public'));
         this.expressApp.get('/', function (req, res) {
             res.sendFile(__dirname + '/index.html');
         });
