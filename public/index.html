@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Warlock</title>
     </head>
     <body>
+        <style>
+            html,
+            body {
+                height: 100%;
+                margin: 0;
+                background-color: #000000;
+                overflow: hidden;
+            }
+        </style>
+        <div id="phaser-game"></div>
         <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" integrity="sha384-mZLF4UVrpi/QTWPA7BjNPEnkIfRFn4ZEO3Qt/HFklTJBj/gBOV8G3HcKn4NfQblz" crossorigin="anonymous"></script>
-        <script src="//cdn.jsdelivr.net/npm/phaser@3.0.0/dist/phaser.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/phaser@3.70.0/dist/phaser-arcade-physics.min.js"></script>
         <script src="js/game.js" type="module"></script>
     </body>
 </html>
